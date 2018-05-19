@@ -1,0 +1,17 @@
+processors := $(call unique,$(processors))
+
+objects += $(if $(findstring arm7tdmi,$(processors)),processor-arm7tdmi)
+objects += $(if $(findstring gsu,$(processors)),processor-gsu)
+objects += $(if $(findstring hg51b,$(processors)),processor-hg51b)
+objects += $(if $(findstring lr35902,$(processors)),processor-lr35902)
+objects += $(if $(findstring spc700,$(processors)),processor-spc700)
+objects += $(if $(findstring upd96050,$(processors)),processor-upd96050)
+objects += $(if $(findstring wdc65816,$(processors)),processor-wdc65816)
+
+obj/processor-arm7tdmi.o: processor/arm7tdmi/arm7tdmi.cpp $(call rwildcard,processor/arm7tdmi/)
+obj/processor-gsu.o:      processor/gsu/gsu.cpp $(call rwildcard,processor/gsu/)
+obj/processor-hg51b.o:    processor/hg51b/hg51b.cpp $(call rwildcard,processor/hg51b/)
+obj/processor-lr35902.o:  processor/lr35902/lr35902.cpp $(call rwildcard,processor/lr35902/)
+obj/processor-spc700.o:   processor/spc700/spc700.cpp $(call rwildcard,processor/spc700/)
+obj/processor-upd96050.o: processor/upd96050/upd96050.cpp $(call rwildcard,processor/upd96050/)
+obj/processor-wdc65816.o: processor/wdc65816/wdc65816.cpp $(call rwildcard,processor/wdc65816/)

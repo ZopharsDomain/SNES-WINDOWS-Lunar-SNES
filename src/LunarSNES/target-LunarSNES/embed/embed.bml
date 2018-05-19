@@ -1,0 +1,14 @@
+namespace name=Embed
+  namespace name=SuperFamicom
+    binary name=iplrom file:../../systems/Super Famicom.sys/ipl.rom
+    binary name=manifest file:../../systems/Super Famicom.sys/manifest.bml
+    //binary name=boards file:../../systems/Super Famicom.sys/boards.bml
+  namespace name=LunarSNES
+    binary name=Chelsea16 file:Chelsea16.png
+    binary name=Chelsea32 file:Chelsea32.png
+    binary name=ChibiMoon16 file:ChibiMoon16.png
+    binary name=ChibiMoon32 file:ChibiMoon32.png
+    binary name=Amy16 file:Amy16.png
+    binary name=Amy32 file:Amy32.png
+    binary name=Chocobo16 file:Chocobo16.png
+    binary name=Chocobo32 file:Chocobo32.png

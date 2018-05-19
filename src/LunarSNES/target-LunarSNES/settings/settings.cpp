@@ -1,0 +1,8 @@
+#include "../LunarSNES.hpp"
+#include "video.cpp"
+#include "audio.cpp"
+#include "input.cpp"
+#include "hotkeys.cpp"
+#include "advanced.cpp"
+#include "paths.cpp"
+#include "device-selector.cpp"
